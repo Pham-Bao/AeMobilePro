@@ -1,0 +1,25 @@
+<p>login works!</p>
+<form (ngSubmit)="login()">
+    <h1>Đăng nhập</h1>
+    <div>
+        <label for="username">Tài khoản:</label>
+        <input type="text" id="username" name="username" [(ngModel)]="username">
+    </div>
+    <div>
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="password">
+    </div>
+    <button type="submit">Đăng nhập</button>
+    <div>
+        <a type="button" (click)="navigateToRegister()">Bạn chưa có tài khoản?</a>
+    </div>
+    <div class="social-icons">
+        <label for="loginAnother">Hoặc có thể đăng nhập bằng: </label>
+        <a href="#" (click)="loginWithFacebook()">
+            <i class="material-icons">facebook</i> 
+        </a>
+        <a href="#" (click)="loginWithGoogle()">
+            <i class="material-icons">email</i> 
+        </a>
+    </div>
+</form>

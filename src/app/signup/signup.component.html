@@ -1,0 +1,24 @@
+<p>signup works!</p>
+<form (ngSubmit)="signup()">
+    <h1>Đăng ký</h1>
+    <div>
+      <label for="username">Họ tên:</label>
+      <input type="text" id="username" name="username" [(ngModel)]="username" required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="email" required>
+    </div>
+    <div>
+      <label for="password">Mật khẩu:</label>
+      <input type="password" id="password" name="password" [(ngModel)]="password" required>
+    </div>
+    <div>
+      <label for="confirmPassword">Xác nhận mật khẩu:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="confirmPassword" required>
+    </div>
+    <button type="submit">Đăng ký</button>
+    <div>
+        <a type="button" (click)="navigateToLogin()">Bạn đã có tài khoản?</a>
+    </div>
+</form>
