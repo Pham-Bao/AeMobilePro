@@ -1,0 +1,27 @@
+.menu-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;          
+  }
+  
+  .menu-button {
+    padding: 12px 15px;  
+    background: none;     
+    border: 2px solid #ccc; 
+    border-radius: 5px;   
+    cursor: pointer;
+    text-align: left;    
+    transition: background-color 0.3s; 
+  }
+  
+  .menu-button:hover {
+    background-color: lightgray; 
+  }
+  
+  .menu-button:active,
+  .menu-button.active {   
+    background-color: #28a745;
+    color: white;       
+    border-color: #28a745; 
+  }
+  

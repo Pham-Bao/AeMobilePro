@@ -1,5 +1,5 @@
 <form (ngSubmit)="signup()">
-    <h1>Đăng ký</h1>
+    <h1 class="signup">Đăng ký</h1>
     <div>
       <label for="username">Họ tên:</label>
       <input type="text" id="username" name="username" [(ngModel)]="username" required>
@@ -17,7 +17,7 @@
       <input type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="confirmPassword" required>
     </div>
     <button type="submit">Đăng ký</button>
-    <div>
+    <div class="links">
         <a type="button" (click)="navigateToLogin()">Bạn đã có tài khoản?</a>
     </div>
 </form>

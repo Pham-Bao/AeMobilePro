@@ -1,5 +1,5 @@
 <form (ngSubmit)="login()">
-    <h1>Đăng nhập</h1>
+    <h1 class="login">Đăng nhập</h1>
     <div>
         <label for="username">Tài khoản:</label>
         <input type="text" id="username" name="username" [(ngModel)]="username">
@@ -9,8 +9,9 @@
         <input type="password" id="password" name="password" [(ngModel)]="password">
     </div>
     <button type="submit">Đăng nhập</button>
-    <div>
+    <div class="links">
         <a type="button" (click)="navigateToRegister()">Bạn chưa có tài khoản?</a>
+        <a >Quên mật khẩu</a>
     </div>
     <div class="social-icons">
         <label for="loginAnother">Hoặc có thể đăng nhập bằng: </label>

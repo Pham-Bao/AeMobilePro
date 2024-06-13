@@ -1,0 +1,14 @@
+.app-container {
+  display: flex;
+  margin-left: -20%;
+}
+
+app-menu-login {
+  flex: 0 0 200px;
+  margin-right: -50px;
+  
+}
+
+router-outlet {
+  flex: 1;
+}
