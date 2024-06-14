@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class SignupComponent {
   username: string = '';
   email: string = '';
+  phone: string = '';
   password: string = '';
   confirmPassword: string = '';
 
@@ -22,10 +23,12 @@ export class SignupComponent {
 
     console.log('Họ tên:', this.username);
     console.log('Email:', this.email);
+    console.log('Số điện thoại', this.phone);
     console.log('Password:', this.password);
 
     this.username = '';
     this.email = '';
+    this.phone = '';
     this.password = '';
     this.confirmPassword = '';
 

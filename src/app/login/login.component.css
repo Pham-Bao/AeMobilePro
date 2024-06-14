@@ -9,8 +9,8 @@ form {
 }
 
 form div {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 form label {
@@ -19,11 +19,10 @@ form label {
 }
 
 form input[type="text"],
-form input[type="password"] {
+form input[type="password"],
+mat-form-field {
   width: calc(100% - 20px);
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 form button {
@@ -46,22 +45,35 @@ form button:hover {
 
 .social-icons {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: flex; 
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px; 
+  margin-top: 8px; 
+}
+
+.icon-button {
+  background: none;
+  cursor: pointer;
+  color: inherit; 
+  font: inherit; 
+  display: flex;
   align-items: center;
+  padding: 8px 12px; 
+  transition: background-color 0.3s; 
 }
 
-.social-icons a {
-  display: inline-block;
-  margin: 0 10px; 
-  color: #28a745; 
+.icon-button i {
   font-size: 24px; 
-  text-decoration: none;
 }
 
-.social-icons a:hover {
-  color: #218838; 
+.icon-button:hover {
+  background-color: rgba(0, 0, 0, 0.1); 
 }
-
 .links {
   display: flex;
   justify-content: space-between;

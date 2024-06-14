@@ -10,6 +10,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { MenuLoginComponent } from './menu-login/menu-login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +22,7 @@ import { MatIconModule } from '@angular/material/icon';
     LoginComponent,
     SignupComponent,
     MenuLoginComponent,
+    ForgotPasswordComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,7 +30,10 @@ import { MatIconModule } from '@angular/material/icon';
     RouterModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule 
+    MatIconModule,
+    MatSlideToggleModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
