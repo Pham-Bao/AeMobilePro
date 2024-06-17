@@ -25,6 +25,10 @@ export class LoginComponent {
     this.router.navigate(['/signup']);
   }
 
+  navigateToForgotPassword() {
+    this.router.navigate(['/forgot-password'])
+  }
+
   loginWithFacebook() {
     console.log('Đăng nhập bằng Facebook');
   }

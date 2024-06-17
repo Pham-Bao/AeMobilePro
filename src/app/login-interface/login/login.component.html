@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <app-menu-login></app-menu-login>
+    <form (ngSubmit)="login()">
+        <h1 class="login">Đăng nhập</h1>
+        <mat-form-field>
+            <mat-label>Tài khoản</mat-label>
+            <input matInput type="text" id="username" name="username" [(ngModel)]="username">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Mật khẩu</mat-label>
+            <input matInput type="password" id="password" name="password" [(ngModel)]="password">
+        </mat-form-field>
+        <div><mat-checkbox class="example-margin">Lưu mật khẩu</mat-checkbox></div>
+        <button mat-stroked-button class="login-button" type="submit">Đăng nhập</button>
+        <div class="links">
+            <a type="button" (click)="navigateToRegister()">Bạn chưa có tài khoản?</a>
+            <a type="button" (click)="navigateToForgotPassword()">Quên mật khẩu</a>
+        </div>
+        <div class="social-icons">
+            <div class="h-line"></div>
+            <div class="button-row">
+                <button type="button" (click)="loginWithFacebook()" class="icon-button">
+                    <img src="../../../assets/images/icon-facebook.png" alt="">Facebook
+                </button>
+                <button type="button" (click)="loginWithGoogle()" class="icon-button">
+                    <img src="../../../assets/images/icon-gmail.png" alt="">Gmail
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

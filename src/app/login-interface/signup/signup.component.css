@@ -1,3 +1,20 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; 
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+}
+
+app-menu-login {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
 form {
   width: 400px;
   margin: 0 auto;
@@ -45,4 +62,4 @@ form button:hover {
 
 .links {
   cursor: pointer;  
-}
+} 

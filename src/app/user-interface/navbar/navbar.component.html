@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+    <div class="navbar">
+        <mat-icon>mobile_friendly</mat-icon>
+        <span>AeMobile</span>
+        <button mat-button [matMenuTriggerFor]="menu">Trang chủ</button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="/home">huythanh</button>
+            <button mat-menu-item routerLink="/about">baodau</button>
+        </mat-menu>
+        <button mat-button>Sản phẩm</button>
+    </div>
+    <span class="spacer"></span>
+    <form class="search-form">
+        <mat-form-field class="search-full-width">
+            <input matInput placeholder="Tìm kiếm" value="">
+            <button mat-icon-button matSuffix aria-label="Search" type="submit">
+                <mat-icon>search</mat-icon>
+            </button>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button>Đăng nhập</button>
+</mat-toolbar>
